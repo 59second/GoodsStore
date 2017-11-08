@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itcast.babasport.mapper.test.BbsTestMapper">
+	<!-- 插入用户 -->
+	<insert id="insertBbsTest" parameterType="BbsTest">
+	insert into baba_test (name,birthday) values (#{name},#{birthday})
+	</insert>
+	
+	<!-- 查询用户信息列表  -->
+	<select id="selectBbsTest" resultType="BbsTest">
+	select * from baba_test
+	</select>
+</mapper>
